@@ -15,6 +15,9 @@ const STORAGE_LOCALE = 'locale';
 const messages = {
   en: {
     'aria.toggleDark': 'Toggle dark mode',
+    'aria.openMenu': 'Open menu',
+    'aria.closeMenu': 'Close menu',
+    'aria.mobileNav': 'Site sections',
     'aria.lang': 'Language',
     'avatar.alt': 'Personal avatar',
     'nav.about': 'About',
@@ -55,7 +58,7 @@ const messages = {
     'exp.title': 'Experience',
     'exp.company': 'Guangzhou Yiyue Tech',
     'exp.role': 'AI Product Manager Assistant & AI Visual Creator',
-    'exp.b1before': 'Led the visual identity creation for ',
+    'exp.b1before': 'Led product design for ',
     'exp.b1product': 'StoryForge B-End Platform',
     'exp.b1after': ' using advanced AIGC workflows.',
     'exp.b2':
@@ -80,6 +83,9 @@ const messages = {
   },
   zh: {
     'aria.toggleDark': '切换深色/浅色模式',
+    'aria.openMenu': '打开菜单',
+    'aria.closeMenu': '关闭菜单',
+    'aria.mobileNav': '页面导航',
     'aria.lang': '语言',
     'avatar.alt': '个人头像',
     'nav.about': '关于',
@@ -121,7 +127,7 @@ const messages = {
     'exp.role': 'AI 产品助理 & AI 视觉创作者',
     'exp.b1before': '主导 ',
     'exp.b1product': 'StoryForge B 端平台',
-    'exp.b1after': ' 的品牌视觉建设，运用高阶 AIGC 工作流交付成果。',
+    'exp.b1after': ' 的产品设计，运用高阶 AIGC 工作流交付成果。',
     'exp.b2':
       '搭建定制 GPT 与 n8n 自动化流程，支持内容策略与快速原型验证。',
     'exp.b3':

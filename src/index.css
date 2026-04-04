@@ -195,11 +195,18 @@
   *::after {
     box-sizing: border-box;
   }
+  html {
+    overflow-x: hidden;
+  }
   body {
     margin: 0;
+    overflow-x: hidden;
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
   }
   #root {
     min-height: 100svh;
+    min-height: 100dvh;
   }
 }
 
