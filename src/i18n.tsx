@@ -99,7 +99,7 @@ const messages = {
     'hero.sticker': '提示词巫师 🪄',
     'about.title': '关于我',
     'about.student': '数字媒体艺术专业学生',
-    'about.at': '就读于',
+    'about.at': '毕业于',
     'about.passion': '，热衷于在 ',
     'about.ai': '人工智能算法',
     'about.human': '人类创造力',
