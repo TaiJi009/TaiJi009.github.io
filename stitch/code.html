@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Zhang Bin | AIGC Enthusiast &amp; AI Designer</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#fcc025",
+                    "on-surface": "#242f41",
+                    "error-dim": "#a70138",
+                    "surface-dim": "#c3d5f8",
+                    "on-primary-container": "#2b006e",
+                    "on-primary": "#f8f0ff",
+                    "secondary-fixed-dim": "#ffabd1",
+                    "secondary-fixed": "#ffc0db",
+                    "outline-variant": "#a2adc4",
+                    "on-secondary-container": "#86155a",
+                    "surface-container-low": "#ecf1ff",
+                    "surface-container": "#dee8ff",
+                    "on-tertiary-fixed": "#3d2b00",
+                    "background": "#f4f6ff",
+                    "surface": "#f4f6ff",
+                    "on-secondary-fixed-variant": "#922164",
+                    "primary-fixed-dim": "#a27cff",
+                    "primary-container": "#ae8dff",
+                    "on-error-container": "#510017",
+                    "surface-bright": "#f4f6ff",
+                    "surface-container-high": "#d5e3ff",
+                    "tertiary": "#755600",
+                    "on-background": "#242f41",
+                    "tertiary-fixed": "#fcc025",
+                    "on-secondary": "#ffeff3",
+                    "surface-container-highest": "#cdddfe",
+                    "primary-dim": "#5e26c7",
+                    "surface-variant": "#cdddfe",
+                    "on-secondary-fixed": "#690045",
+                    "surface-tint": "#6a37d4",
+                    "primary": "#6a37d4",
+                    "tertiary-dim": "#674b00",
+                    "inverse-on-surface": "#929db4",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary": "#a02d70",
+                    "on-surface-variant": "#515c70",
+                    "secondary-container": "#ffc0db",
+                    "outline": "#6c778c",
+                    "on-tertiary": "#fff1db",
+                    "tertiary-fixed-dim": "#edb210",
+                    "primary-fixed": "#ae8dff",
+                    "secondary-dim": "#912063",
+                    "on-tertiary-container": "#563e00",
+                    "error-container": "#f74b6d",
+                    "on-error": "#ffefef",
+                    "inverse-primary": "#a078ff",
+                    "on-tertiary-fixed-variant": "#614700",
+                    "inverse-surface": "#040e1f",
+                    "error": "#b41340",
+                    "on-primary-fixed-variant": "#370086",
+                    "on-primary-fixed": "#000000"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Outfit"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .polka-dot {
+            background-image: radial-gradient(#242f41 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .hard-shadow {
+            box-shadow: 4px 4px 0px 0px rgba(36, 47, 65, 1);
+        }
+        .hard-shadow-hover:hover {
+            box-shadow: 6px 6px 0px 0px rgba(36, 47, 65, 1);
+            transform: translate(-2px, -2px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary/30">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 w-full bg-[#f4f6ff]/80 dark:bg-[#242f41]/80 backdrop-blur-xl border-b-2 border-[#242f41] dark:border-[#f4f6ff] shadow-[4px_4px_0px_0px_rgba(36,47,65,1)]">
+<nav class="flex justify-between items-center max-w-7xl mx-auto px-8 py-4">
+<div class="text-3xl font-black text-[#242f41] dark:text-[#f4f6ff] tracking-tighter cursor-pointer active:scale-95">ZB</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-['Outfit'] font-bold tracking-tight text-[#6a37d4] border-b-4 border-[#6a37d4] pb-1 cursor-pointer active:scale-95" href="#about">About</a>
+<a class="font-['Outfit'] font-bold tracking-tight text-[#242f41] dark:text-[#f4f6ff] hover:text-[#a02d70] transition-colors cursor-pointer active:scale-95" href="#skills">Skills</a>
+<a class="font-['Outfit'] font-bold tracking-tight text-[#242f41] dark:text-[#f4f6ff] hover:text-[#a02d70] transition-colors cursor-pointer active:scale-95" href="#experience">Experience</a>
+<a class="font-['Outfit'] font-bold tracking-tight text-[#242f41] dark:text-[#f4f6ff] hover:text-[#a02d70] transition-colors cursor-pointer active:scale-95" href="#contact">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 border-2 border-on-surface hard-shadow font-bold font-headline hover:-translate-y-0.5 transition-all active:scale-95">
+                Let's Talk
+            </button>
+</nav>
+</header>
+<main class="max-w-7xl mx-auto px-6 md:px-12">
+<!-- Hero Section -->
+<section class="min-h-[819px] flex flex-col md:flex-row items-center gap-12 py-20 relative overflow-hidden">
+<!-- Background Decorations -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-tertiary-container rounded-full -z-10 translate-x-1/2 -translate-y-1/2"></div>
+<div class="absolute bottom-20 left-10 w-48 h-12 bg-primary rounded-full -z-10 -rotate-12 opacity-80 backdrop-blur-md"></div>
+<div class="flex-1 space-y-8 z-10">
+<div class="inline-flex items-center gap-2 px-4 py-2 bg-surface-container-high border-2 border-on-surface rounded-full">
+<span class="w-3 h-3 bg-secondary rounded-full animate-pulse"></span>
+<span class="text-sm font-bold uppercase tracking-widest font-label">Available for Freelance</span>
+</div>
+<h1 class="text-6xl md:text-8xl font-headline font-black text-on-surface leading-[0.9] tracking-tighter">
+                    Hi, I'm <br/><span class="text-primary">Zhang Bin</span>
+</h1>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 bg-surface-container-lowest border-2 border-on-surface hard-shadow font-bold">AIGC Enthusiast</span>
+<span class="px-4 py-2 bg-secondary-container border-2 border-on-surface hard-shadow font-bold">AI Designer &amp; Coder</span>
+<span class="px-4 py-2 bg-tertiary-container border-2 border-on-surface hard-shadow font-bold">Academic Explorer</span>
+<span class="px-4 py-2 bg-primary-container border-2 border-on-surface hard-shadow font-bold">Team Glue (ENTJ)</span>
+</div>
+<div class="pt-8 flex items-center gap-6">
+<button class="px-10 py-4 bg-secondary text-on-secondary border-2 border-on-surface hard-shadow font-headline text-xl font-bold hover:-translate-y-1 transition-all active:scale-95">
+                        Contact Me
+                    </button>
+<div class="flex items-center gap-2 text-on-surface/60 font-bold italic">
+<span class="material-symbols-outlined">south_east</span>
+                        Based in Guangzhou
+                    </div>
+</div>
+</div>
+<div class="flex-1 relative">
+<!-- Abstract "Portrait" composed of CSS shapes -->
+<div class="relative w-80 h-80 md:w-96 md:h-96 mx-auto">
+<div class="absolute inset-0 bg-on-surface rounded-[2rem] rotate-3"></div>
+<div class="absolute inset-0 bg-surface-container-lowest border-2 border-on-surface rounded-[2rem] -rotate-3 overflow-hidden flex items-center justify-center">
+<div class="w-64 h-64 bg-primary rounded-full flex items-center justify-center relative">
+<span class="material-symbols-outlined text-on-primary text-9xl">auto_awesome</span>
+<div class="absolute -top-4 -right-4 w-24 h-24 bg-tertiary-container border-2 border-on-surface rounded-lg rotate-12 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface text-4xl">code</span>
+</div>
+</div>
+</div>
+<!-- Floating Sticker Element -->
+<div class="absolute -bottom-6 -left-6 px-6 py-4 bg-secondary text-on-secondary border-2 border-on-surface rounded-xl hard-shadow -rotate-6">
+<p class="font-bold font-headline">Prompt Wizard 🪄</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Me Bento Grid -->
+<section class="py-20" id="about">
+<div class="flex items-center gap-4 mb-12">
+<h2 class="text-4xl font-headline font-black uppercase tracking-tighter">About Me</h2>
+<div class="h-1 flex-1 bg-on-surface"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<div class="md:col-span-8 bg-surface-container-lowest border-2 border-on-surface p-8 rounded-[3rem_1rem_3rem_1rem] hard-shadow relative overflow-hidden">
+<div class="polka-dot absolute inset-0 opacity-5"></div>
+<div class="relative z-10">
+<p class="text-2xl md:text-3xl font-medium leading-relaxed mb-6">
+                            Digital Media Art student at <span class="text-primary font-bold underline underline-offset-8">GDUT</span> with a passion for bridging the gap between <span class="text-secondary font-bold">AI algorithms</span> and <span class="text-tertiary font-bold">Human creativity</span>.
+                        </p>
+<div class="flex items-center gap-6">
+<div class="flex flex-col">
+<span class="text-xs uppercase font-bold tracking-widest text-on-surface/50">Current GPA</span>
+<span class="text-3xl font-black">3.94 / 4.0</span>
+</div>
+<div class="w-px h-12 bg-on-surface/20"></div>
+<div class="flex flex-col">
+<span class="text-xs uppercase font-bold tracking-widest text-on-surface/50">Research</span>
+<span class="text-lg font-bold">Chinese CHI Paper Author</span>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 bg-tertiary-container border-2 border-on-surface p-8 rounded-[1rem_3rem_1rem_3rem] hard-shadow flex flex-col justify-between">
+<span class="material-symbols-outlined text-5xl">location_on</span>
+<div>
+<h3 class="text-2xl font-black mb-2">Location</h3>
+<p class="font-bold opacity-80">Guangzhou, Guangdong</p>
+<p class="text-sm mt-4 italic opacity-60">Ready to relocate for the right AI project.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Toolchain & Skills -->
+<section class="py-20" id="skills">
+<h2 class="text-4xl font-headline font-black uppercase tracking-tighter mb-12 flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-4xl">construction</span>
+                Toolchain &amp; Skills
+            </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Skill Card 1 -->
+<div class="bg-surface-container-low border-2 border-on-surface p-6 rounded-2xl hard-shadow transition-all hover:-translate-y-2">
+<div class="w-12 h-12 bg-primary-container border-2 border-on-surface rounded-lg mb-6 flex items-center justify-center">
+<span class="material-symbols-outlined font-bold">psychology</span>
+</div>
+<h3 class="text-xl font-black mb-4">AI Tools</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-surface-container-lowest border border-on-surface text-xs font-bold rounded">Gemini</span>
+<span class="px-2 py-1 bg-surface-container-lowest border border-on-surface text-xs font-bold rounded">ChatGPT</span>
+<span class="px-2 py-1 bg-surface-container-lowest border border-on-surface text-xs font-bold rounded">Claude</span>
+</div>
+</div>
+<!-- Skill Card 2 -->
+<div class="bg-surface-container-low border-2 border-on-surface p-6 rounded-2xl hard-shadow transition-all hover:-translate-y-2">
+<div class="w-12 h-12 bg-secondary-container border-2 border-on-surface rounded-lg mb-6 flex items-center justify-center">
+<span class="material-symbols-outlined font-bold">terminal</span>
+</div>
+<h3 class="text-xl font-black mb-4">AI Editors &amp; Dev</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-surface-container-lowest border border-on-surface text-xs font-bold rounded">Cursor</span>
+<span class="px-2 py-1 bg-surface-container-lowest border border-on-surface text-xs font-bold rounded">n8n</span>
+<span class="px-2 py-1 bg-surface-container-lowest border border-on-surface text-xs font-bold rounded">Coze</span>
+</div>
+</div>
+<!-- Skill Card 3 -->
+<div class="bg-surface-container-low border-2 border-on-surface p-6 rounded-2xl hard-shadow transition-all hover:-translate-y-2">
+<div class="w-12 h-12 bg-tertiary-container border-2 border-on-surface rounded-lg mb-6 flex items-center justify-center">
+<span class="material-symbols-outlined font-bold">palette</span>
+</div>
+<h3 class="text-xl font-black mb-4">AIGC Graphic</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-surface-container-lowest border border-on-surface text-xs font-bold rounded">Midjourney</span>
+<span class="px-2 py-1 bg-surface-container-lowest border border-on-surface text-xs font-bold rounded">Stable Diffusion</span>
+</div>
+</div>
+<!-- Skill Card 4 -->
+<div class="bg-surface-container-low border-2 border-on-surface p-6 rounded-2xl hard-shadow transition-all hover:-translate-y-2">
+<div class="w-12 h-12 bg-surface-dim border-2 border-on-surface rounded-lg mb-6 flex items-center justify-center">
+<span class="material-symbols-outlined font-bold">movie</span>
+</div>
+<h3 class="text-xl font-black mb-4">AIGC Video</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-surface-container-lowest border border-on-surface text-xs font-bold rounded">Sora</span>
+<span class="px-2 py-1 bg-surface-container-lowest border border-on-surface text-xs font-bold rounded">Runway</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Work Experience -->
+<section class="py-20" id="experience">
+<div class="flex items-center gap-4 mb-12">
+<div class="h-1 flex-1 bg-on-surface"></div>
+<h2 class="text-4xl font-headline font-black uppercase tracking-tighter">Experience</h2>
+</div>
+<div class="space-y-12">
+<div class="relative pl-12 border-l-4 border-on-surface py-2">
+<div class="absolute top-0 left-0 -translate-x-1/2 w-8 h-8 bg-primary border-2 border-on-surface rounded-full hard-shadow"></div>
+<div class="bg-surface-container-lowest border-2 border-on-surface p-8 rounded-2xl hard-shadow">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+<div>
+<h3 class="text-2xl font-black">Guangzhou Yiyue Tech</h3>
+<p class="text-primary font-bold">AI Product Manager Assistant &amp; AI Visual Creator</p>
+</div>
+<span class="px-4 py-1 bg-on-surface text-surface rounded-full text-sm font-bold">2023.09 - 2026.03</span>
+</div>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary pt-1">check_circle</span>
+<p class="font-medium text-on-surface-variant">Led the visual identity creation for <span class="font-bold text-on-surface">StoryForge B-End Platform</span> using advanced AIGC workflows.</p>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary pt-1">check_circle</span>
+<p class="font-medium text-on-surface-variant">Developed custom GPTs and n8n automations for content strategy and rapid prototyping.</p>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary pt-1">check_circle</span>
+<p class="font-medium text-on-surface-variant">Optimized team collaboration through AI-driven asset management and training.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Competitions -->
+<section class="py-20">
+<div class="bg-primary text-on-primary border-2 border-on-surface rounded-[3rem] p-12 hard-shadow overflow-hidden relative">
+<div class="polka-dot absolute inset-0 opacity-10"></div>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12">
+<div>
+<h2 class="text-4xl font-headline font-black uppercase mb-8">Honors &amp; Roles</h2>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-tertiary-container text-on-tertiary-container rounded-full border-2 border-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined font-bold">military_tech</span>
+</div>
+<p class="font-bold text-lg">National Level Competition Awards (Gold/Silver)</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-secondary-container text-on-secondary-container rounded-full border-2 border-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined font-bold">groups</span>
+</div>
+<p class="font-bold text-lg">Campus Team Leader - Innovation Hub</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container-highest text-primary rounded-full border-2 border-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined font-bold">workspace_premium</span>
+</div>
+<p class="font-bold text-lg">Provincial Digital Arts Excellence Prize</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col justify-center items-center md:items-end">
+<div class="bg-surface-container-lowest text-on-surface border-2 border-on-surface p-8 rounded-2xl rotate-3 hard-shadow max-w-xs">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4">format_quote</span>
+<p class="italic font-medium text-lg leading-relaxed">
+                                "Zhang Bin combines the precision of a coder with the vision of an artist. A rare ENTJ talent in the AIGC space."
+                            </p>
+<div class="mt-4 flex items-center gap-2">
+<div class="w-10 h-1 flex bg-primary"></div>
+<span class="font-bold text-sm">Faculty Supervisor</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t-2 border-[#242f41] rounded-t-[48px] bg-[#f4f6ff] dark:bg-[#242f41] bg-[radial-gradient(#242f41_1px,transparent_1px)] [background-size:20px_20px] relative overflow-hidden" id="contact">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 px-12 py-16 max-w-7xl mx-auto relative z-10">
+<div class="space-y-6 text-center md:text-left">
+<div class="inline-block bg-tertiary-container border-2 border-on-surface px-6 py-3 rounded-full hard-shadow -rotate-2">
+<h3 class="text-2xl font-black font-headline">Say Hello! 👋</h3>
+</div>
+<div class="space-y-2">
+<p class="text-4xl font-headline font-black text-[#242f41] tracking-tighter">Let's create something <br/><span class="text-primary">magical</span> together.</p>
+</div>
+<div class="flex flex-wrap justify-center md:justify-start gap-4">
+<a class="flex items-center gap-2 px-4 py-2 bg-surface-container-lowest border-2 border-on-surface font-['Plus_Jakarta_Sans'] text-sm font-medium uppercase tracking-widest text-[#242f41] hover:text-[#6a37d4] hover:underline underline-offset-4 transition-all duration-300" href="mailto:hello@zhangbin.com">
+<span class="material-symbols-outlined text-sm">mail</span>
+                        Email Me
+                    </a>
+<div class="flex items-center gap-2 px-4 py-2 bg-surface-container-lowest border-2 border-on-surface font-['Plus_Jakarta_Sans'] text-sm font-medium uppercase tracking-widest text-[#242f41]">
+<span class="material-symbols-outlined text-sm">chat_bubble</span>
+                        WeChat: ZB_AIGC
+                    </div>
+</div>
+</div>
+<div class="flex flex-col items-center md:items-end gap-6">
+<div class="flex gap-4">
+<a class="w-12 h-12 bg-on-surface text-surface rounded-full flex items-center justify-center hover:bg-primary transition-all duration-300" href="#">
+<span class="font-bold">GH</span>
+</a>
+<a class="w-12 h-12 bg-on-surface text-surface rounded-full flex items-center justify-center hover:bg-secondary transition-all duration-300" href="#">
+<span class="font-bold">IN</span>
+</a>
+<a class="w-12 h-12 bg-on-surface text-surface rounded-full flex items-center justify-center hover:bg-tertiary-container hover:text-on-surface transition-all duration-300" href="#">
+<span class="font-bold">DR</span>
+</a>
+</div>
+<div class="text-right">
+<p class="font-['Plus_Jakarta_Sans'] text-sm font-medium uppercase tracking-widest text-[#242f41] opacity-70">© 2024 Zhang Bin • Built with Joy</p>
+</div>
+</div>
+</div>
+<!-- Background Speech Bubble Decoration -->
+<div class="absolute -bottom-10 -left-10 w-64 h-64 border-4 border-on-surface rounded-full opacity-10"></div>
+</footer>
+</body></html>
