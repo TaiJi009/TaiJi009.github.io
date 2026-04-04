@@ -64,7 +64,7 @@ export default function App() {
     [
       "font-['Outfit'] font-bold tracking-tight cursor-pointer active:scale-95 transition-colors",
       activeSection === id
-        ? 'text-tertiary-container border-b-4 border-tertiary-container pb-1'
+        ? 'text-tertiary-container border-b-4 border-tertiary-container pb-1 dark:text-primary dark:border-primary'
         : 'text-on-surface hover:text-secondary border-b-4 border-transparent pb-1',
     ].join(' ');
 
@@ -242,7 +242,7 @@ export default function App() {
 <div className="md:col-span-4 bg-tertiary-container border-2 border-on-surface p-8 rounded-[1rem_3rem_1rem_3rem] hard-shadow flex flex-col justify-between">
 <span className="material-symbols-outlined text-5xl">location_on</span>
 <div>
-<h3 className="text-2xl font-black mb-2">Location</h3>
+<h3 className="inline-block cursor-pointer text-2xl font-black mb-2 hover:-translate-y-1 transition-all active:scale-95">Location</h3>
 <p className="font-bold opacity-80">Guangzhou, Guangdong</p>
 <p className="text-sm mt-4 italic opacity-60">Ready to relocate for the right AI project.</p>
 </div>
