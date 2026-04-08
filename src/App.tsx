@@ -100,7 +100,7 @@ export default function App() {
     <div className="bg-background text-on-surface font-body selection:bg-secondary/30">
       
 {/*  TopNavBar  */}
-<header className="sticky top-0 z-50 w-full border-b-2 border-on-surface bg-background/85 backdrop-blur-xl hard-shadow">
+<header className="fixed top-0 left-0 right-0 z-50 w-full border-b-2 border-on-surface bg-background/85 backdrop-blur-xl hard-shadow">
 <nav className="flex max-w-7xl mx-auto items-center justify-between gap-2 px-4 sm:px-6 lg:px-8 py-3 md:py-4">
 <div className="cursor-pointer hover:-translate-y-1 transition-all active:scale-95 rounded-full border-2 border-on-surface overflow-hidden h-9 w-9 shrink-0">
 <img
@@ -206,7 +206,7 @@ export default function App() {
   </nav>
 </div>
 </header>
-<main className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+<main className="mx-auto max-w-7xl px-4 pt-20 sm:px-6 sm:pt-[5.25rem] md:px-8 md:pt-[5.5rem] lg:px-12">
 {/*  Hero Section  */}
 <section className="relative flex min-h-0 flex-col items-center gap-8 overflow-hidden py-12 sm:gap-10 sm:py-16 md:min-h-[min(52rem,90svh)] md:flex-row md:items-center md:gap-12 md:py-20 lg:min-h-[51rem]">
 {/*  Background Decorations  */}

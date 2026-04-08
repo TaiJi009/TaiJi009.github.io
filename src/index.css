@@ -197,6 +197,7 @@
   }
   html {
     overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
   }
   body {
     margin: 0;
