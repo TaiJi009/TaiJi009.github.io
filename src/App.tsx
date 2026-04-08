@@ -2,6 +2,13 @@ import { useEffect, useState } from 'react';
 import SplitText from './components/SplitText.jsx';
 import { useI18n, type MessageKey } from './i18n';
 
+/** 与 Vite `base` 一致，保证 GitHub Pages 子路径部署下静态资源路径正确 */
+function publicUrl(path: string) {
+  const base = import.meta.env.BASE_URL;
+  const clean = path.startsWith('/') ? path.slice(1) : path;
+  return base.endsWith('/') ? `${base}${clean}` : `${base}/${clean}`;
+}
+
 const NAV_IDS = ['about', 'skills', 'experience', 'contact'] as const;
 type NavId = (typeof NAV_IDS)[number];
 
@@ -97,7 +104,7 @@ export default function App() {
 <nav className="flex max-w-7xl mx-auto items-center justify-between gap-2 px-4 sm:px-6 lg:px-8 py-3 md:py-4">
 <div className="cursor-pointer hover:-translate-y-1 transition-all active:scale-95 rounded-full border-2 border-on-surface overflow-hidden h-9 w-9 shrink-0">
 <img
-  src="/Image_z/touxiang.jpg"
+  src={publicUrl('/Image_z/touxiang.jpg')}
   alt={t('avatar.alt')}
   className="h-full w-full object-cover object-[center_35%]"
   width={36}
@@ -266,7 +273,7 @@ export default function App() {
 <div className="absolute inset-0 bg-surface-container-lowest border-2 border-on-surface rounded-[2rem] -rotate-3 overflow-hidden flex items-center justify-center">
 <div className="w-64 h-64 rounded-full border-4 border-on-surface overflow-hidden relative bg-surface-container-low hard-shadow">
 <img
-  src="/Image_z/touxiang.jpg"
+  src={publicUrl('/Image_z/touxiang.jpg')}
   alt={t('avatar.alt')}
   className="h-full w-full object-cover object-[center_35%]"
   width={256}
