@@ -1,73 +1,47 @@
-# React + TypeScript + Vite
+# 张滨 · 个人网站
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+张滨（Zhang Bin）的个人主页，用于展示 AIGC 与 AI 设计相关作品、技能与经历，并提供联系方式。
 
-Currently, two official plugins are available:
+**在线访问：[https://taiji009.github.io/](https://taiji009.github.io/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 项目简介
 
-## React Compiler
+本站采用单页滚动布局，包含首页、关于、技能、经历、联系等模块，视觉风格以莫兰迪低饱和配色为主，强调画廊感与作品优先的展示体验。
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+主要特性：
 
-## Expanding the ESLint configuration
+- 中英双语切换
+- 深色 / 浅色主题
+- 响应式布局，适配移动端与桌面端
+- 基于 GSAP 的轻量文字与交互动效
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 技术栈
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vite.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [GSAP](https://gsap.com/)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 本地开发
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# 安装依赖
+npm install
+
+# 启动开发服务器
+npm run dev
+
+# 构建生产版本（输出至 docs/ 目录）
+npm run build
+
+# 本地预览构建结果
+npm run preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 部署说明
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+项目通过 GitHub Pages 发布，构建产物输出到 `docs/` 目录。推送至仓库后，站点将自动更新至 [https://taiji009.github.io/](https://taiji009.github.io/)。
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 作者
+
+**张滨** — AIGC 爱好者 · AI 设计师 & 开发者
