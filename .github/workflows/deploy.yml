@@ -1,5 +1,7 @@
 name: Deploy to GitHub Pages
 
+# Redeploy after switching Pages source to GitHub Actions.
+
 on:
   push:
     branches: [main]
