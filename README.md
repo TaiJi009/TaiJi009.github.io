@@ -57,7 +57,11 @@ npm run lint     # 代码检查
 
 ## 部署说明
 
-项目通过 GitHub Pages 发布，构建产物输出到 `docs/` 目录。推送至仓库后，站点将自动更新至 [https://taiji009.github.io/](https://taiji009.github.io/)。
+推送 `frontend/` 源码至 `main` 分支后，GitHub Actions 会自动构建并发布至 [https://taiji009.github.io/](https://taiji009.github.io/)。
+
+**首次启用需配置一次：** 仓库 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**（不再使用 Deploy from a branch）。
+
+本地构建产物仍输出到 `docs/` 目录，可用于 `npm run preview` 预览；线上发布由 CI 负责，无需手动提交 `docs/`。
 
 ## 作者
 
