@@ -22,20 +22,37 @@
 - [Tailwind CSS](https://tailwindcss.com/)
 - [GSAP](https://gsap.com/)
 
+## 项目结构
+
+```
+├── frontend/     # 前端源码（React + Vite + TypeScript）
+├── docs/         # 构建产物（GitHub Pages 发布目录）
+├── Intro/        # 项目规划与说明文档
+└── stitch/       # 设计稿与原型
+```
+
 ## 本地开发
 
-```bash
-# 安装依赖
-npm install
+在 `frontend/` 目录下操作，或在仓库根目录使用便捷脚本：
 
-# 启动开发服务器
+```bash
+# 方式一：进入 frontend 目录
+cd frontend
+npm install
 npm run dev
 
-# 构建生产版本（输出至 docs/ 目录）
-npm run build
+# 方式二：在根目录直接运行（会自动转发到 frontend）
+npm install --prefix frontend
+npm run dev
+```
 
-# 本地预览构建结果
-npm run preview
+常用命令：
+
+```bash
+npm run dev      # 启动开发服务器
+npm run build    # 构建生产版本（输出至根目录 docs/）
+npm run preview  # 本地预览构建结果
+npm run lint     # 代码检查
 ```
 
 ## 部署说明

@@ -79,7 +79,7 @@ const messages = {
     'footer.email': 'Email Me',
     'footer.wechatLabel': 'WeChat: ',
     'footer.wechatId': 'ZB_AIGC',
-    'footer.copyright': '© 2024 Zhang Bin • Built with Joy',
+    'footer.copyright': '© 2026 Zhang Bin • Built with Joy',
   },
   zh: {
     'aria.toggleDark': '切换深色/浅色模式',
@@ -146,7 +146,7 @@ const messages = {
     'footer.email': '发邮件',
     'footer.wechatLabel': '微信：',
     'footer.wechatId': 'ZB_AIGC',
-    'footer.copyright': '© 2024 张滨 · 用心搭建',
+    'footer.copyright': '© 2026 张滨 · 用心搭建',
   },
 } as const;
 
